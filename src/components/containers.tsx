@@ -9,12 +9,12 @@ const Containers = () => {
 
 <div className="bg-white mt-4 p-4 border rounded-lg">
 
-<div className="flex justify-between gap-x-8 border-b border-black py-2 mb-4">
+<div className="flex justify-between gap-x-8 border-b border-gray py-2 mb-4">
         <p>Filter</p>
         <p>0 selected</p>
     </div>
 
-    <div className="flex flex-col justify-start gap-y-6 [&>*]:border-gray-100 border-b [&>*]:border-b [&>*]:py-1 [&>*]:flex [&>*]:justify-between">
+    <div className="flex flex-col justify-start gap-y-6 [&>*]:border-gray-100  [&>*]:border-b [&>*:last-child]:border-b-0 [&>*]:pb-2 [&>*]:flex [&>*]:justify-between">
         <div>
         <p>Personal Information</p>
         <svg className="text-blue-500 w-4 h-4 mt-px ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -41,7 +41,7 @@ const Containers = () => {
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
            </svg>
         </div>
-        <div className="flex gap-x-8 justify-center items-center">
+        <div className=" flex gap-x-8 justify-center items-center">
         <p>Advance Filter</p>
         <svg className="text-blue-500 w-4 h-4 mt-px ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -57,21 +57,23 @@ const Containers = () => {
             <input type="checkbox"/> <p className="text-blue-700">247 candidates</p>
         </div>
         <div className="flex gap-x-10 justify-center items-center">
-            <p>Qualified</p>
-            <p>Task 25</p>
-            <p>Disqualified</p>
+            <p className="text-blue-700">Qualified</p>
+            <p className="text-sm cursor-pointer">Task <span className="ml-1 p-1 bg-gray-100 rounded-lg text-black">25</span></p>
+            <p className="text-sm cursor-pointer">Disqualified<span className="ml-1 p-1 bg-gray-100 rounded-lg text-black">78</span></p>
         </div>
     </div>
         </div>
 
 <div className="mt-10 absolute top-60 left-[420px] flex gap-y-10 flex-col">
 {candidates.map((candidate) => (
-    <div className="flex gap-x-8">
-        <div className="bg-blue-100 text-blue-200 border rounded-full w-20 h-20 flex justify-center items-center text-2xl">AS</div>
-        <div>
-       <h1> {candidate.name}</h1>
-       <p>{candidate.country}</p>
-       <p>{candidate.degree} {candidate.date}</p>
+    <div className="flex gap-x-8 items-center">
+        <input type="checkbox"/>
+        <div className="bg-blue-100 text-blue-200 border rounded-full w-20 h-20 flex justify-center items-center text-2xl">
+            AS</div>
+        <div className="flex flex-col gap-y-2">
+       <h1 className="font-black"> {candidate.name}</h1>
+       <p className="text-sm font-medium">{candidate.country}</p>
+       <p className="text-sm font-extralight ">{candidate.degree} {candidate.date}</p>
        {/* <p>{candidate.tag}</p> */}
     </div>
     </div>
