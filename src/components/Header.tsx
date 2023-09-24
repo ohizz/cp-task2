@@ -1,5 +1,5 @@
 import Drop from './drop';
-import React from 'react';
+
 const Header = () => {
  return(
  <header className="pt-6 flex justify-center items-start gap-x-10">

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import React from 'react'
+
 
 const Drop = () => {
 const [active, setActive] = useState<boolean>(false)
