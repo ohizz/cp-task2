@@ -1,15 +1,13 @@
-import Dropdown from "./Dropdown";
-
-
+import DropDown from "./DropDown";
+import React from 'react'
 const Header = () => {
  return(
  <header className="pt-6 flex justify-center items-start gap-x-10">
     <div>
     <h1 className="text-blue-500 text-xl font-meduim tracking-wide">London Internship Program</h1>
     <p>London</p>
-    </div>
-    
-<Dropdown/>
+    </div> 
+<DropDown/>
 
     <div className="flex justify-center gap-x-4 items-center">
 <div className="[&>*]:bg-white [&>*]:flex  [&>*]:justify-center  [&>*]:items-center [&>*]:rounded-lg [&>*]:w-10 [&>*]:h-10 flex justify-center items-center gap-x-2">

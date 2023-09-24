@@ -1,8 +1,8 @@
 import './App.css'
-import Dropdown from './components/Dropdown'
 import Header from './components/Header'
-import MainBody from './components/Mainbody'
-import SideBar from './components/Sidebar'
+import MainBody from './components/MainBody'
+import SideBar from './components/SideBar'
+
 
 function App() {
 
