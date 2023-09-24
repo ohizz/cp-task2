@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SideBar = () => {
+const side = () => {
  return(
     <div className="pt-6 relative left-0 w-[72px] h-[1024px] bg-[#FFFFFF]">
         <div className="px-4 mb-14 flex flex-col items-center justify-center gap-y-8">
@@ -87,4 +87,4 @@ const SideBar = () => {
  )
 }
 
-export default SideBar;
+export default side;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MainBody = () => {
+const Containers = () => {
     const candidates:{name: string, country: string, degree:string, date:string}[] = [{name:'Aaliyah Sanderson', country:"Riyadh, Saudi Arabia", degree: "Bachelor - Cambridge University", date:"2023 - 2023"}, {name:'John Doe', country:"Baston, USA", degree: "Bachelor - MIT", date:"2023 - 2023"}, {name:'Thomas Matt', country:"Edinburgh, UK", degree: "Bachelor - Havard University", date:"2023 - 2023"}, {name:'Kamilia Smith', country:"London, UK", degree: "Bachelor - Boston University", date:"2023 - 2023"}, {name:'Roy Jade', country:"Cmabridge, UK", degree: "Bachelor - Yale University", date:"2023 - 2023"}, {name:'Ahmed Salman', country:"Riyadh, Saudi Arabia", degree: "Bachelor - Cambridge University", date:"2023 - 2023"}];
  return(
     <div className="flex flex-col justify-center gap-x-6 items-center">
@@ -86,4 +86,4 @@ const MainBody = () => {
  )
 }
 
-export default MainBody;
+export default Containers;

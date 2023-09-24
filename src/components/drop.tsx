@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from 'react'
-const DropDown = () => {
+
+const Drop = () => {
 const [active, setActive] = useState<boolean>(false)
 const options:any[] = [{name:'Applied', title:1745}, {name:'Shortlisted', title:452}, {name:'Technical interview', title:24}, {name:'Opportunity', title:244}, {name:'Video Interview I', title:25}, {name:'Video interview II', title:25}, {name:'Offer', title:25}, {name:'Withdrawn', title:25}];
 const [selected, setSelected] = useState<string>('')
@@ -37,4 +38,4 @@ const [selected, setSelected] = useState<string>('')
  )
 }
 
-export default DropDown;
+export default Drop;
